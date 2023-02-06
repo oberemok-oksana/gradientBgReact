@@ -1,0 +1,83 @@
+:root {
+  --beginGradient: #3148db;
+  --endGradient: #ffff00;
+}
+
+body {
+  font-family: "Itim", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    var(--beginGradient),
+    var(--endGradient)
+  );
+}
+
+.main-title {
+  font-size: 85px;
+  line-height: 84px;
+  width: 730px;
+  margin: 40px auto;
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+}
+
+.copy {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-btn {
+  cursor: pointer;
+  display: none;
+}
+
+.copy-btn:active {
+  transform: rotate(-45deg);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -55px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
