@@ -11,11 +11,13 @@ function App() {
   const changeColorOne = (e) => {
     setColorOne(e.target.value);
     changeGradient(e.target.value, colorTwo);
+    setIsCopied(false);
   };
 
   const changeColorTwo = (e) => {
     setColorTwo(e.target.value);
     changeGradient(colorOne, e.target.value);
+    setIsCopied(false);
   };
 
   const changeGradient = (colorOne, colorTwo) => {
