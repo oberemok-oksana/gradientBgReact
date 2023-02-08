@@ -87,3 +87,7 @@ body {
   align-items: center;
   gap: 20px;
 }
+
+h3 {
+  margin: 0;
+}
