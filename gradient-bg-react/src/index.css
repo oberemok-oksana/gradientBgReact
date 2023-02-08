@@ -36,7 +36,6 @@ body {
 
 .copy-btn {
   cursor: pointer;
-  display: none;
 }
 
 .copy-btn:active {
@@ -80,4 +79,11 @@ body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
